@@ -1,0 +1,36 @@
+body {
+  background-color: #e4e4e4;
+  margin: 5%;
+  font-family: "Source Code Pro", monospace;
+  color: black;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 60px;
+}
+
+.tagline {
+  text-align: center;
+  color: #666;
+}
+
+.image-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary {
+  color: #e4e4e4;
+  margin: 2%;
+}
