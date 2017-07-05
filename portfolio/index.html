@@ -1,149 +1,185 @@
 <html>
   <head>
-        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-    
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-        <link href="css/style.css" rel="stylesheet" />
-        <title>FreeCodeCamp Portfolio Exercise</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Personal Portfolio Website">
+    <meta name="author" content="rn4ir">
+    <title>FreeCodeCamp Portfolio Exercise</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-	    <div class="navbar-header">
-	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-		    <i class="fa fa-bars"></i>
-		</button>
-		<a class="navbar-brand page-scroll" href="https://muchbits.com/rn4ir">
-		    <span class="light">R</span> N4IR
-		</a>
-	    </div>
-				
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-	        <ul class="nav navbar-nav">
-		    <li class="hidden"><a href="#page-top"></a></li>
-                    <li><a class="page-scroll" href="#home">Home</a></li>
-                    <li><a class="page-scroll" href="#about">About</a></li>
-                    <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
-                    <li><a class="page-scroll" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">rn4ir</a>
         </div>
-	<!-- /.container -->
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="nav-about"><a href="#about">About</a></li>
+            <li id="nav-portfolio"><a href="#portfolio">Portfolio</a></li>
+            <li id="nav-contact"><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
     </nav>
 
-    <!-- Intro Header -->
-    <header id="home" class="intro">
-        <div class="intro-body">
-	    <div class="container">
-	        <div class="row">
-		    <div class="col-md-8 col-md-offset-2">
-		        <h1 class="brand-heading">H1</h1>
-			<p class="intro-text">Paragraph</p>
-			<a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-			</a>
-		    </div>
-		</div>
-	    </div>
-	</div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-	    <h2>About Me</h2>
-	    <div class="col-lg-4">
-	        <img src="#" alt="photo_or_logo" class="image-cropper" />
-	    </div>
-	    <div class="col-lg-4">
-	        <p>About Paragraph</p>
+    <!-- Begin page content -->
+    <div class="container-fluid">
+      
+      <div class="row cover top">
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="col-xs-12 headline">
+              <h1 class="text-center">rn4ir</h1>
+              <p class="lead text-center">Systems Administrator, Newbie Software Engineer</p>
             </div>
-	</div>
-    </section>
-
-    <hr>
-
-    <!-- PORtfolio Section -->
-    <section id="portfolio" class="content-section text-center">
-        <div class="portfolio">
-	    <div class="container">
-	        <div class="row">
-		    <div class="col-lg-10 col-lg-offset-1 text-center">
-		        <h2>Portfolio</h2>
-			<div class="row">
-			    <div class="col-md-4">
-				<div class="portfolio-item">
-				    <a href="#"><img class="img-portfolio img-responsive" src="#"></a>
-				</div>
-			    </div>
-			    <div class="col-md-4">
-				<div class="portfolio-item">
-				    <a href="#"><img class="img-portfolio img-responsive" src="#"></a>
-				</div>
-			    </div>
-			    <div class="col-md-4">
-				<div class="portfolio-item">
- 				    <a href="#"><img class="img-portfolio img-responsive" src="#"></a>
-			        </div>
-			    </div>
-			    <div class="col-md-4">
-				<div class="portfolio-item">
-				    <a href="#"><img class="img-portfolio img-responsive" src="#"></a>
-				</div>
-			    </div>
-			    <div class="col-md-4">
-			        <div class="portfolio-item">
-				    <a href="#"><img class="img-portfolio img-responsive" src="#"></a>
-				</div>
-			    </div>
-			    <div class="col-md-4">
-				<div class="portfolio-item">
-				    <a href="#"><img class="img-portfolio img-responsive" src="#"></a>
-				</div>
-			    </div>
-			</div>
-			<!-- /.row (nested) -->
-			
-                        <a href="#" class="btn btn-dark">View More Examples</a>
-		    </div>
-		    <!-- /.col-lg-10 -->
-		</div>
-		<!-- /.row -->
-	    </div>
-	</div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container contact-section content-section text-center">
+          </div>
+          <div class="row">
+            <div class="col-xs-12 center-block text-center">
+              <a href="#about"><span id="scrollIcon" class="front-glyph glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div id="about" class="row cover">
+        <h2 class="text-center">About Me</h2>
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-		<h2>Contact</h2>
-		<p>contact Paragraph</p>
-		<ul class="list-inline banner-social-buttons">
-		    <li><a href="https://twitter.com/" class="btn btn-default btn-lg btn-twit"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a></li>
-		    <li><a href="https://github.com/" class="btn btn-default btn-lg btn-git"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a></li>
-		    <li><a href="https://plus.google.com/" class="btn btn-default btn-lg btn-gplus"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a></li>
-		   <li><a href="https://www.linkedin.com/" class="btn btn-default btn-lg btn-lin"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a></li>
-		   <li><a href="https://freecodecamp.com/" class="btn btn-default btn-lg btn-fcc"><i class="fa fa-fire fa-fw"></i> <span class="network-name">FreeCodeCamp</span></a></li>
-		</ul>
-		<p><a href="mailto:#" class="email">Email</a></p>
-	    </div>
-	</div>
-    </section>
+          <div class="col-md-6 text-center about-info">
+            <img class="img-circle text-center profile-img" src="#">
+            <p class="text-center">Hey there! I'm rahul. Welcome to my corner of the internet. I'm a self-taught Systems Administrator. I primarily work with Linux servers in my day job and I teach myself to code at night. I also enjoy a good cup of coffee, am a voracious reader and am passionate about travelling.</p>
+          </div>
+          <div class="col-md-6 about-tools">
+            <p class="text-center">Here are few tools I use</p>
+              <div class="col-xs-6">
+                <ul>
+                  <li>Python</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Bootstrap</li>
+                  <li>Javascript</li>
+                </ul>
+              </div>
+              <div class="col-xs-6">
+                <ul>
+                  <li>Ansible</li>
+                  <li>Nagios</li>
+                  <li>Git</li>
+                  <li>Travis-CI</li>
+                  <li>AWS</li>
+                </ul>
+              </div>
+            
+          </div>
+          <div class="row break">
+            <div class="col-md-6 about-last">
+              <p class="text-center">Check out my latest projects below <span class="glyphicon glyphicon-arrow-down"></span></p>
+            </div>
+          </div>
+        </div> 
+      </div><!-- End #About -->
 
-    <!-- Map Section -->
-    <div id="map">
-	<iframe width="100%" height="100%" frameborder="0" style="border:0" src="#" allowfullscreen></iframe>
+      <div id="portfolio" class="row cover">
+        <h2 class="text-center">Portfolio</h2>
+        <div class="container">
+          <div class="row portfolio-projects"> <!-- Two project row-->
+            <div class="col-lg-6"> <!--1st side project -->
+              <div class="row"> 
+                <div class="col-sm-5 text-center">
+                  <h4 class="portfolio-projects--title">Earth Quotes</h4>
+                  <p class="portfolio-projects--desc">Random quotes shown over google earth images</p>
+                  <p class="portfolio-projects--desc">Uses: Javascript, JQuery, Bootstrap</p>
+                  <a class="btn btn-rounded portfolio-projects--btn" href="#" role="button">View Project</a>
+                </div>
+                <div class="col-sm-7 text-center">
+                  <img class="portfolio-projects--image" src="#">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6"> <!--2nd side project -->
+              <div class="row"> 
+                <div class="col-sm-5 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+                  <h4 class="portfolio-projects--title">Task Timer</h4>
+                  <p class="portfolio-projects--desc">A Pomodoro clock timer with a task list integration</p>
+                  <p class="portfolio-projects--desc">Uses: Javascript, JQuery, Bootstrap</p>
+                  <a class="btn btn-rounded portfolio-projects--btn" href="#" role="button">View Project</a>
+                </div>
+                <div class="col-sm-7 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+                  <img class="img-rounded portfolio-projects--image" src="#">
+                </div>
+              </div>
+            </div>
+          </div><!--end Two project row-->
+
+          <div class="row portfolio-projects"> <!-- Opposite Two project row-->
+            <div class="col-lg-6"> <!--1st side project -->
+              <div class="row"> 
+                <div class="col-sm-5 text-center">
+                  <h4 class="portfolio-projects--title">Whats the Weather</h4>
+                  <p class="portfolio-projects--desc">A weather app to check current weather conditions.</p>
+                  <p class="portfolio-projects--desc">Uses: Javascript, Jquery, APIs</p>
+                  <a class="btn btn-rounded portfolio-projects--btn" href="#" role="button">View Project</a>
+                </div>
+                <div class="col-sm-7 text-center">
+                  <img class="img-rounded portfolio-projects--image" src="#">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6"> <!--2nd side project -->
+              <div class="row"> 
+                <div class="col-sm-5 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+                  <h4 class="portfolio-projects--title">Simon Game</h4>
+                  <p class="portfolio-projects--desc">A simple recreation of the 80s game Simon.</p>
+                  <p class="portfolio-projects--desc">Uses: Javascript, Sass, JQuery</p>
+                  <a class="btn btn-rounded portfolio-projects--btn" href="#" role="button">View Project</a>
+                </div>
+                <div class="col-sm-7 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+                  <img class="img-rounded portfolio-projects--image" src="#">
+                </div>
+              </div>
+            </div>
+          </div><!--end Opposite Two project row-->
+
+        </div>
+        </div>
+      </div><!-- End #Portfolio -->
+
+      <div id="contact" class="row cover bottom">
+        <h2 class="text-center contact-header">Contact Me</h2>
+        <p class="text-center contact-email">Get in touch with me <span class="glyphicon glyphicon-arrow-right"></span> rn [ at ] rahul-nair [ dot  ] com</p>
+        <div class="text-center contact-social-icons">
+          <p>Or find me on:</p>
+          <ul class="centered">
+            <a href="https://codepen.io/rn4ir/"><li><i class="fa fa-codepen"></i> CodePen</li></a>
+            <a href="https://www.linkedin.com/in/therahulnair/"><li><i class="fa fa-linkedin-square"></i> LinkedIn</li></a>
+            <a href="https://github.com/rn4ir"><li><i class="fa fa-github"></i> Github</li></a>
+            <a href="https://www.freecodecamp.org/fcc31904034"><li>(<i class="fa fa-fire"></i>) FreeCodeCamp</li></a>
+          </ul>
+        </p>
+        
+      </div><!-- End #Contact -->
+
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-	    <p>&copy;Copyright whatEver </p>
-	</div>
+    <footer class="footer">
+      <div class="container">
+      </div>
     </footer>
+
+
   </body>
 </html>
