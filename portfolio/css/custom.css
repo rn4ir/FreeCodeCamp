@@ -1,52 +1,7 @@
-
-@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
-.about-tools ul li, .contact-social-icons ul a li {
-  text-align: center; 
-}
-
-.centered {
-  float: none;
-  margin-left: auto;
-  margin-right: auto; 
-}
-
-.break {
-  clear: both;
-  margin-top: 10px; 
-}
-
-@media (min-width: 768px) {
-    .pull-right-sm {
-    float: right !important; 
-    }
-
-    .pull-left-sm {
-    float: left !important; 
-    } 
-}
-
-@media (min-width: 992px) {
-    .pull-right-md {
-    float: right !important; 
-    }
-
-    .pull-left-md {
-    float: left !important; 
-    } 
-}
-
-@media (min-width: 1200px) {
-    .pull-right-lg {
-    float: right !important; 
-    }
-
-    .pull-left-lg {
-    float: left !important; 
-    } 
-}
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,700");
 
 html {
-    position: relative;
+    position: absolute;
     height: 100%; 
 }
 
@@ -56,7 +11,7 @@ img {
 
 body {
     height: 100%;
-    font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+    font-family: "Comfortaa", Helvetica, sans-serif;
     background-color: #9B59B6;
     margin-bottom: 60px; 
 }
@@ -71,7 +26,7 @@ h5 {
 }
 
 p {
-    font-family: "Quattrocento", sans-serif;
+    font-family: "Comfortaa", sans-serif;
     color: #DCC6E0; 
 }
 
@@ -96,7 +51,6 @@ body > .container-fluid {
     z-index: 100;
     margin-bottom: 0;
     border-radius: 0;
-    transition: background-color 1s ease 0s; 
 }
 
 .navbar-brand {
@@ -150,19 +104,15 @@ body > .container-fluid {
 /* Solid class attached on scroll past first section */
 .navbar.solid {
   background-color: ghostwhite;
-  transition: background-color 1s ease 0s;
-  box-shadow: 0 0 4px rgba(7, 55, 74, 0.2); 
 }
 
 .navbar.solid .navbar-brand {
     display: inline-block;
     color: #DCC6E0;
-    transition: color 1s ease 0s; 
 }
 
 .navbar.solid .navbar-nav > li > a {
     color: #DCC6E0;
-    transition: color 1s ease 0s; 
 }
 
 .cover {
@@ -345,7 +295,6 @@ body > .container-fluid {
 .footer {
   bottom: 0;
   width: 100%;
-  height: 30px;
   background-color: ghostwhite;
   color: #DCC6E0; 
 }
@@ -372,4 +321,49 @@ body > .container-fluid {
 
 .back-to-top.visible {
     display: block; 
+}
+
+.about-tools ul li, .contact-social-icons ul a li {
+  text-align: center; 
+}
+
+.centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.break {
+  clear: both;
+  margin-top: 10px; 
+}
+
+@media (min-width: 768px) {
+    .pull-right-sm {
+    float: right !important; 
+    }
+
+    .pull-left-sm {
+    float: left !important; 
+    } 
+}
+
+@media (min-width: 992px) {
+    .pull-right-md {
+    float: right !important; 
+    }
+
+    .pull-left-md {
+    float: left !important; 
+    } 
+}
+
+@media (min-width: 1200px) {
+    .pull-right-lg {
+    float: right !important; 
+    }
+
+    .pull-left-lg {
+    float: left !important; 
+    } 
 }
