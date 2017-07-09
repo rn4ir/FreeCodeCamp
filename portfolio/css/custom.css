@@ -47,12 +47,10 @@ p {
     font-size: 1.5em;
 }
 
-
-
 #home {
     height: 100%;
     width: 100%;
-    padding: 15%;
+    padding-top: 15%;
 }
 
 #home h4 {
@@ -62,6 +60,7 @@ p {
 #about {
     height: 100%;
     width: 100%;
+    padding-top: 15%;
 }
 
 #about li {
@@ -69,17 +68,28 @@ p {
     font-size: 1em;
 }
 
+#about p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 .pheadings {
     color: #2bbc8a;
     font-size: 1.25em;
 }
 
+.ptext {
+    padding: 10%;
+}
+
 #portfolio {
     height: 100%;
     width: 100%;
+    padding-top: 10%;
 }
 
 #contact {
     height: 100%;
     width: 100%;
+    padding-top: 15%;
 }
